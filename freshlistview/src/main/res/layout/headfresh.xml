@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dip">
+
+    <LinearLayout
+        android:id="@+id/ll_headfreshview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--箭头-->
+            <ImageView
+                android:id="@+id/headfresh_imageview_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/common_listview_headview_red_arrow" />
+            <!--进度条-->
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/headfresh_progressbar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:background="@drawable/red_process" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headfresh_textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/headfresh_textview_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:text="2014-08-26 12:20:23" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+    android:padding="8dip">
+
+    <LinearLayout
+       android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <!--进度条-->
+            <ProgressBar
+                android:id="@+id/footfresh_progressbar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:background="@drawable/red_process" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/footfresh_textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加载更多···"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
